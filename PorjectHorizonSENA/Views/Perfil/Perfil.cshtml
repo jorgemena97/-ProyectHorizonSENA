@@ -1,0 +1,174 @@
+﻿@model Domain.Entities.Usuario
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Perfil</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .profile-picture {
+            width: 200px; /* Ajuste del tamaño */
+            height: 200px; /* Ajuste del tamaño */
+            object-fit: cover;
+            border-radius: 50%;
+            border: 5px solid #00AF00;
+        }
+
+        .profile-picture-placeholder {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            border: 5px solid #00AF00;
+            background-color: #f0f0f0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 20px;
+            color: #aaa;
+        }
+
+        #preview {
+            display: none;
+            width: 150px; /* Ancho de la imagen de vista previa */
+            height: 150px; /* Alto de la imagen de vista previa */
+            object-fit: cover; /* Para que la imagen se ajuste al contenedor */
+            border-radius: 50%; /* Para que la imagen sea circular */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container mt-4">
+        <div class="d-flex flex-column align-items-center">
+            <div class="text-center mb-3">
+                <h1>Mi Perfil</h1>
+                @if (!string.IsNullOrEmpty(Model.FotoPerfil))
+                {
+                    <img src="@Url.Content("~/images/" + Model.FotoPerfil)" alt="Foto de Perfil" class="profile-picture img-thumbnail" />
+                }
+                else
+                {
+                    <div class="profile-picture-placeholder">
+                        No Foto
+                    </div>
+                }
+                @if (Model.UsuarioId == (int?)ViewData["AuthenticatedUserId"])
+                {
+                    <form id="uploadForm" asp-controller="Perfil" asp-action="SubirFoto" method="post" enctype="multipart/form-data">
+                        <input type="hidden" name="usuarioId" value="@Model.UsuarioId" />
+                        <input type="file" id="fotoInput" name="foto" accept=".jpg, .jpeg, .png, .gif" style="display:none;" onchange="mostrarSubirFoto(event)" />
+                        <img id="preview" src="#" alt="Vista previa de la imagen" />
+                        <button type="button" id="editButton" onclick="mostrarInputFoto()">Editar</button>
+                        <button type="button" id="subirButton" onclick="validarYSubirFoto()" style="display:none;">Aceptar</button>
+                    </form>
+                }
+            </div>
+
+            <div class="text-center">
+                <p><strong>Nombre:</strong> @Model.Nombres</p>
+                <p><strong>Primer Apellido:</strong> @Model.PrimerApellido</p>
+                <p><strong>Segundo Apellido:</strong> @Model.SegundoApellido</p>
+                <p><strong>Correo:</strong> @Model.Correo</p>
+            </div>
+            @if (Model.UsuarioId != (int?)ViewData["AuthenticatedUserId"])
+            {
+                <div class="text-center">
+                    <a class="nav-link text-dark" asp-area="" asp-controller="Chat" asp-action="Chat">
+                        <button type="button" class="btn btn-primary">message</button>
+                    </a>
+                </div>
+            }
+        </div>
+
+    </div>
+    </div>
+
+    @if (Model.IdRol == 1)
+    {
+        <div style="display: flex;">
+            <ul>
+                <h3>Mis Proyectos</h3>
+                @if (ViewData["FileModels"] != null)
+                {
+                    var fileModels = ViewData["FileModels"] as List<FileModel>;
+                    foreach (var fileModel in fileModels)
+                    {
+                        @Html.Partial("_FileTreeViewUserProfile", fileModel)
+                    }
+                }
+            </ul>
+            <div id="fileContent" style="margin-left: 20px; border: 1px solid #ccc; padding: 10px; width: 50%;">
+                <h2>File Content</h2>
+                <pre id="content"></pre>
+            </div>
+        </div>
+
+    }
+    <script>
+        function validarYSubirFoto() {
+            var fileInput = document.getElementById('fotoInput');
+            var file = fileInput.files[0];
+
+            if (file) {
+                var allowedTypes = ['image/jpeg', 'image/png', 'image/gif'];
+                if (!allowedTypes.includes(file.type)) {
+                    // Mostrar mensaje de error
+                    alert('Por favor selecciona un archivo de imagen válido (.jpg, .jpeg, .png, .gif).');
+                    // Reiniciar el campo de selección de archivos
+                    fileInput.value = ''; // Esto borra el valor del input de tipo file
+                    return;
+                }
+            }
+
+            // Si la validación es exitosa, enviar el formulario
+            document.getElementById('uploadForm').submit();
+        }
+
+            function mostrarInputFoto() {
+                var fotoInput = document.getElementById('fotoInput');
+                var editButton = document.getElementById('editButton');
+                var subirButton = document.getElementById('subirButton');
+
+                fotoInput.style.display = 'block';
+                subirButton.style.display = 'inline';
+                editButton.style.display = 'none';
+                fotoInput.click(); // Simula el clic para abrir el diálogo de archivos
+            }
+
+        function mostrarSubirFoto(event) {
+            var fotoInput = document.getElementById('fotoInput');
+            var preview = document.getElementById('preview');
+            var subirButton = document.getElementById('subirButton');
+
+            if (fotoInput.files && fotoInput.files[0]) {
+                var reader = new FileReader();
+
+                reader.onload = function (e) {
+                    preview.src = e.target.result;
+                    preview.style.display = 'block';
+                };
+
+                reader.readAsDataURL(fotoInput.files[0]);
+                subirButton.style.display = 'inline';
+            } else {
+                preview.style.display = 'none';
+                subirButton.style.display = 'none';
+            }
+        }
+
+        function validarYSubirFoto() {
+            var fotoInput = document.getElementById('fotoInput');
+            if (fotoInput.files.length > 0) {
+                document.getElementById('uploadForm').submit();
+            } else {
+                alert('Por favor, elija una foto antes de subirla.');
+            }
+        }
+    </script>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
+
+
+

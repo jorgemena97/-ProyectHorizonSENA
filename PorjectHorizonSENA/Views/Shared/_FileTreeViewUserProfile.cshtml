@@ -1,0 +1,65 @@
+﻿@model FileModel
+
+<li>
+    @if (!Model.IsRootProjects)
+    {
+        @if (!string.IsNullOrEmpty(Model.NombreProyecto))
+        {
+            <span> Nombre Del Proyecto <br>  <strong> @Model.NombreProyecto </strong> </span>
+            <br>
+        }
+        <span class="folder" onclick="toggleFolder(this)">
+            
+            <strong>@Model.Name</strong>
+           <br />
+           <br />
+        </span>
+        
+       
+    }
+    <ul style="display: @(Model.IsRootProjects ? "block" : "none")">
+        @foreach (var child in Model.Children)
+        {
+            <li>
+                @Html.Partial("_FileTreeViewUserProfile", child) <!-- Llama a la vista parcial con el modelo Child -->
+            </li>
+        }
+    </ul>
+    @if (!Model.IsDirectory)
+    {
+        <span class="file">
+            <a href="@Url.Action("Download", "File", new { filePath = Model.Path })" target="_blank">@Model.Name</a>
+            <button type="button" onclick="viewFileContent('@Url.Action("ViewFileContent", "File", new { filePath = Model.RelativePath })')">View</button>
+        </span>
+    }
+</li>
+
+<script>
+    function toggleFolder(element) {
+        var ul = element.nextElementSibling;
+        if (ul.style.display === "none") {
+            ul.style.display = "block";
+        } else {
+            ul.style.display = "none";
+        }
+    }
+
+    function viewFileContent(filePath) {
+        fetch(filePath)
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error('Network response was not ok');
+                }
+                return response.text();
+            })
+            .then(data => {
+                document.getElementById('fileContent').innerHTML = `
+                                <h2>File Content</h2>
+                                <pre>${data}</pre>
+                            `;
+            })
+            .catch(error => {
+                console.error('Error:', error);
+            });
+    }
+</script>

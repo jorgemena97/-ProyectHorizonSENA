@@ -1,0 +1,48 @@
+﻿@model FileModel
+
+<h1>Project Files</h1>
+<div style="display: flex;">
+    <ul>
+        @Html.Partial("_FileTreeView", Model)
+    </ul>
+    <div id="fileContent" style="margin-left: 20px; border: 1px solid #ccc; padding: 10px; width: 50%;">
+        <h2>File Content</h2>
+        <pre id="content"></pre>
+    </div>
+</div>
+
+<
+
+<script>
+     function viewFileContent(filePath) {
+         fetch(filePath)
+             .then(response => {
+                 if (!response.ok) {
+                     throw new Error('Network response was not ok');
+                 }
+                 var contentType = response.headers.get("content-type");
+                 if (contentType.startsWith("image/")) {
+                     return response.blob().then(blob => {
+                         var img = document.createElement('img');
+                         img.src = URL.createObjectURL(blob);
+                         img.style.maxWidth = "100%"; // Ajustar la imagen al contenedor
+                         img.style.height = "auto";
+                         document.getElementById('fileContent').innerHTML = `
+                                 <h2>File Content</h2>
+                             `;
+                         document.getElementById('fileContent').appendChild(img);
+                     });
+                 } else {
+                     return response.text().then(data => {
+                         document.getElementById('fileContent').innerHTML = `
+                                 <h2>File Content</h2>
+                                 <pre>${data}</pre>
+                             `;
+                     });
+                 }
+             })
+             .catch(error => {
+                 console.error('Error:', error);
+             });
+     }
+</script>
