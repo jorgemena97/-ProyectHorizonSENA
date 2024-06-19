@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "A+cEEHbl/NEhJizQSF5Q5fkIbo3V1PDoyiRW0Uz8ii9WYh+5w0rteXKJ7GzTbIyFLp9M+BjOclaBgLxHpmjcXg==",
+  "dgSpecHash": "PNsF7d7vckPxwS3iu7MZrTbME7n0Kh+nLPc9baRln3EvjNowbPAqkGKPoeatVlD2302lXGq0GKWkGzfVJvfPmA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Usuario\\Documents\\MI proyectos\\Proyecto_SENAA\\PorjectHorizonSENA\\PorjectHorizonSENA.csproj",
+  "projectFilePath": "C:\\Users\\Usuario\\Documents\\Amor\\PorjectHorizonSENA\\PorjectHorizonSENA.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Usuario\\.nuget\\packages\\azure.core\\1.35.0\\azure.core.1.35.0.nupkg.sha512",
     "C:\\Users\\Usuario\\.nuget\\packages\\azure.identity\\1.10.3\\azure.identity.1.10.3.nupkg.sha512",

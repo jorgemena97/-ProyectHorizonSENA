@@ -4897,11 +4897,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Usuario\\Documents\\MI proyectos\\Proyecto_SENAA\\Archive\\Archive.csproj",
+      "projectUniqueName": "C:\\Users\\Usuario\\Documents\\Amor\\Archive\\Archive.csproj",
       "projectName": "Archive",
-      "projectPath": "C:\\Users\\Usuario\\Documents\\MI proyectos\\Proyecto_SENAA\\Archive\\Archive.csproj",
+      "projectPath": "C:\\Users\\Usuario\\Documents\\Amor\\Archive\\Archive.csproj",
       "packagesPath": "C:\\Users\\Usuario\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Usuario\\Documents\\MI proyectos\\Proyecto_SENAA\\Archive\\obj\\",
+      "outputPath": "C:\\Users\\Usuario\\Documents\\Amor\\Archive\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

@@ -24,6 +24,7 @@ public class HomeController : Controller
             var role = User.FindFirst(ClaimTypes.Role)?.Value;
             var nombre = User.FindFirst(ClaimTypes.Name)?.Value;
             var Apellido = User.FindFirst(ClaimTypes.Surname)?.Value;
+            var fotoPerfil = User.FindFirst("FotoPerfil")?.Value;
 
             // Utiliza el rol del usuario para determinar qué vista parcial de menú mostrar
             switch (role)

@@ -11,9 +11,10 @@ using Services.Services.Implementation;
 using Services.Services.Interfaces;
 using DinkToPdf;
 using DinkToPdf.Contracts;
-using PorjectHorizonSENA.Extension;
+
 using Archive.Interfaz;
 using Archive.Implementacion;
+using DocumentFormat.OpenXml.Office2016.Drawing.ChartDrawing;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -30,13 +31,12 @@ builder.Services.AddTransient<IPasswordHasher, PasswordHasher>();
 builder.Services.AddTransient<IProyectoRepository, ProyectoRepository>();
 builder.Services.AddTransient<IProyectoService, ProyectoService>();
 
+
 //Registrar FilesManager como servicio con la ruta de la carpeta de destino
 var targetFolderPath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot/images");
 builder.Services.AddTransient<FilesManager>(provider => new FilesManager(targetFolderPath));
 
-var context = new CustomAssemblyLoadContext();
-context.LoadUnmanagedLibrary(Path.Combine(Directory.GetCurrentDirectory(), "LibreriaPDF/libwkhtmltox.dll"));
-builder.Services.AddSingleton(typeof(IConverter), new SynchronizedConverter(new PdfTools()));
+
 
 builder.Services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme).AddCookie(option =>
 {

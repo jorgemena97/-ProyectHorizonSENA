@@ -1,0 +1,94 @@
+﻿@model PorjectHorizonSENA.Models.VMRegister;
+@{
+    Layout = null;
+}
+
+<head>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/PorjectHorizonSENA.styles.css" asp-append-version="true" />
+</head>
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>rEGISTER</title>
+</head>
+
+<body>
+    <div class="container mt-5">
+        <form asp-controller="Access" asp-action="Register" method="post" class="mt-3">
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="NumeroDeDocumento">Número de Documento</label>
+                    <input type="text" class="form-control" id="NumeroDeDocumento" name="NumeroDeDocumento" placeholder="Numero de Documento" required>
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="TipoDeDocumento">Tipo de Documento</label>
+                    <select class="form-control" id="TipoDeDocumento" name="TipoDeDocumento" required>
+                        <option value="CC">Cédula de Ciudadanía</option>
+                        <option value="Pasaporte">Pasaporte</option>
+                    </select>
+                </div>
+            </div>
+            <div class="form-group col-md-6">
+                <label for="Nombres"> Nombres</label>
+                <input type="text" class="form-control" id="Nombres" name="Nombres" placeholder="Nombres" required>
+            </div>
+
+            <div class="form-group col-md-6">
+                <label for="PrimerApellido">Primer Apellido</label>
+                <input type="text" class="form-control" id="PrimerApellido" name="PrimerApellido" placeholder="Primer Apellido" required>
+            </div>
+            <div class="form-group col-md-6">
+                <label for="SegundoApellido">Segundo Apellido</label>
+                <input type="text" class="form-control" id="Segundo Apellido" name="SegundoApellido" placeholder="Segundo Apellido" required>
+            </div>
+
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="Correo">Correo</label>
+                    <input type="email" class="form-control" id="Correo" placeholder="Correo" name="Correo" required>
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="Contrasena">Contraseña</label>
+                    <input type="password" class="form-control" id="Contrasena" placeholder="Contraseña" name="Contrasena" required>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group col-md-4">
+                    <input type="text" class="form-control" id="IdRol" placeholder="ID Rol" name="IdRol" value="0" hidden>
+                </div>
+                <div class="form-group col-md-4">
+                    <label for="MunicipioCentroDeFormacion">Municipio Centro de Formacion</label>
+                    <input type="text" class="form-control" id="MunicipioCentroDeFormacion" name="MunicipioCentroDeFormacion" placeholder="Municipio" required>
+                </div>
+                <div class="form-group col-md-4">
+                    <label for="DepartamentoCentroDeFormacion">Departamento Centro de Formacion</label>
+                    <input type="text" class="form-control" name="DepartamentoCentroDeFormacion" id="DepartamentoCentroDeFormacion" placeholder="Departamento" required>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="CentroDeFormacion">Centro de Formacion</label>
+                <input type="text" class="form-control" id="CentroDeFormacion" name="CentroDeFormacion" placeholder="Centro de Formacion" required>
+            </div>
+            <div class="form-group">
+                <label for="FichaAprendiz">Ficha Aprendiz</label>
+                <input type="text" class="form-control" id="FichaAprendiz" name="FichaAprendiz" placeholder="Ficha Aprendiz" required>
+            </div>
+            <button type="submit" class="btn btn-primary">Registrarse</button>
+
+            @if (ViewData["ValidateMessage"] != null)
+            {
+                <div class="alert alert-danger" role="alert">
+                    @ViewData["ValidateMessage"]
+                </div>
+            }
+
+
+        </form>
+    </div>
+</body>
+</html>

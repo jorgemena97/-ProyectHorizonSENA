@@ -1,0 +1,314 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Usuario\\Documents\\Amor\\PorjectHorizonSENA\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{122EB68E-58A9-4094-9D67-799AD210CF62}|PorjectHorizonSENA.csproj|c:\\users\\usuario\\documents\\amor\\porjecthorizonsena\\views\\shared\\_filetreeview.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{122EB68E-58A9-4094-9D67-799AD210CF62}|PorjectHorizonSENA.csproj|solutionrelative:views\\shared\\_filetreeview.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{122EB68E-58A9-4094-9D67-799AD210CF62}|PorjectHorizonSENA.csproj|c:\\users\\usuario\\documents\\amor\\porjecthorizonsena\\views\\perfil\\perfil.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{122EB68E-58A9-4094-9D67-799AD210CF62}|PorjectHorizonSENA.csproj|solutionrelative:views\\perfil\\perfil.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{122EB68E-58A9-4094-9D67-799AD210CF62}|PorjectHorizonSENA.csproj|c:\\users\\usuario\\documents\\amor\\porjecthorizonsena\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{122EB68E-58A9-4094-9D67-799AD210CF62}|PorjectHorizonSENA.csproj|solutionrelative:views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{122EB68E-58A9-4094-9D67-799AD210CF62}|PorjectHorizonSENA.csproj|c:\\users\\usuario\\documents\\amor\\porjecthorizonsena\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{122EB68E-58A9-4094-9D67-799AD210CF62}|PorjectHorizonSENA.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{122EB68E-58A9-4094-9D67-799AD210CF62}|PorjectHorizonSENA.csproj|c:\\users\\usuario\\documents\\amor\\porjecthorizonsena\\controllers\\accesscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{122EB68E-58A9-4094-9D67-799AD210CF62}|PorjectHorizonSENA.csproj|solutionrelative:controllers\\accesscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{496C4947-4A43-4082-B403-07051738CAF4}|..\\Archive\\Archive.csproj|c:\\users\\usuario\\documents\\amor\\archive\\interfaz\\ifilesmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{496C4947-4A43-4082-B403-07051738CAF4}|..\\Archive\\Archive.csproj|c:\\users\\usuario\\documents\\amor\\archive\\implementacion\\filesmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{577F6F5D-B99F-45E9-AF1F-6FE80FF6AABA}|..\\Services\\Services.csproj|c:\\users\\usuario\\documents\\amor\\services\\services.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{122EB68E-58A9-4094-9D67-799AD210CF62}|PorjectHorizonSENA.csproj|c:\\users\\usuario\\documents\\amor\\porjecthorizonsena\\porjecthorizonsena.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{122EB68E-58A9-4094-9D67-799AD210CF62}|PorjectHorizonSENA.csproj|solutionrelative:porjecthorizonsena.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{122EB68E-58A9-4094-9D67-799AD210CF62}|PorjectHorizonSENA.csproj|c:\\users\\usuario\\documents\\amor\\porjecthorizonsena\\controllers\\administradorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{122EB68E-58A9-4094-9D67-799AD210CF62}|PorjectHorizonSENA.csproj|solutionrelative:controllers\\administradorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{122EB68E-58A9-4094-9D67-799AD210CF62}|PorjectHorizonSENA.csproj|c:\\users\\usuario\\documents\\amor\\porjecthorizonsena\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{122EB68E-58A9-4094-9D67-799AD210CF62}|PorjectHorizonSENA.csproj|solutionrelative:controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{122EB68E-58A9-4094-9D67-799AD210CF62}|PorjectHorizonSENA.csproj|c:\\users\\usuario\\documents\\amor\\porjecthorizonsena\\controllers\\perfilcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{122EB68E-58A9-4094-9D67-799AD210CF62}|PorjectHorizonSENA.csproj|solutionrelative:controllers\\perfilcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{122EB68E-58A9-4094-9D67-799AD210CF62}|PorjectHorizonSENA.csproj|c:\\users\\usuario\\documents\\amor\\porjecthorizonsena\\controllers\\usuarioscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{122EB68E-58A9-4094-9D67-799AD210CF62}|PorjectHorizonSENA.csproj|solutionrelative:controllers\\usuarioscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{122EB68E-58A9-4094-9D67-799AD210CF62}|PorjectHorizonSENA.csproj|c:\\users\\usuario\\documents\\amor\\porjecthorizonsena\\views\\usuarios\\aprendices.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{122EB68E-58A9-4094-9D67-799AD210CF62}|PorjectHorizonSENA.csproj|solutionrelative:views\\usuarios\\aprendices.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{122EB68E-58A9-4094-9D67-799AD210CF62}|PorjectHorizonSENA.csproj|c:\\users\\usuario\\documents\\amor\\porjecthorizonsena\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{122EB68E-58A9-4094-9D67-799AD210CF62}|PorjectHorizonSENA.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{122EB68E-58A9-4094-9D67-799AD210CF62}|PorjectHorizonSENA.csproj|c:\\users\\usuario\\documents\\amor\\porjecthorizonsena\\controllers\\filecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{122EB68E-58A9-4094-9D67-799AD210CF62}|PorjectHorizonSENA.csproj|solutionrelative:controllers\\filecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{785C1FD9-11F2-466B-9AD1-77F2E17CA54D}|..\\Persistence\\Persistence.csproj|c:\\users\\usuario\\documents\\amor\\persistence\\persistence.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{122EB68E-58A9-4094-9D67-799AD210CF62}|PorjectHorizonSENA.csproj|c:\\users\\usuario\\documents\\amor\\porjecthorizonsena\\models\\vmlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{122EB68E-58A9-4094-9D67-799AD210CF62}|PorjectHorizonSENA.csproj|solutionrelative:models\\vmlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "_FileTreeView.cshtml",
+              "DocumentMoniker": "C:\\Users\\Usuario\\Documents\\Amor\\PorjectHorizonSENA\\Views\\Shared\\_FileTreeView.cshtml",
+              "RelativeDocumentMoniker": "Views\\Shared\\_FileTreeView.cshtml",
+              "ToolTip": "C:\\Users\\Usuario\\Documents\\Amor\\PorjectHorizonSENA\\Views\\Shared\\_FileTreeView.cshtml",
+              "RelativeToolTip": "Views\\Shared\\_FileTreeView.cshtml",
+              "ViewState": "AQIAAAoAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-19T21:07:33.558Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Perfil.cshtml",
+              "DocumentMoniker": "C:\\Users\\Usuario\\Documents\\Amor\\PorjectHorizonSENA\\Views\\Perfil\\Perfil.cshtml",
+              "RelativeDocumentMoniker": "Views\\Perfil\\Perfil.cshtml",
+              "ToolTip": "C:\\Users\\Usuario\\Documents\\Amor\\PorjectHorizonSENA\\Views\\Perfil\\Perfil.cshtml",
+              "RelativeToolTip": "Views\\Perfil\\Perfil.cshtml",
+              "ViewState": "AQIAAEEAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-19T21:07:08.117Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\Usuario\\Documents\\Amor\\PorjectHorizonSENA\\appsettings.json",
+              "RelativeDocumentMoniker": "appsettings.json",
+              "ToolTip": "C:\\Users\\Usuario\\Documents\\Amor\\PorjectHorizonSENA\\appsettings.json",
+              "RelativeToolTip": "appsettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-06-19T20:49:24.048Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "IFilesManager.cs",
+              "DocumentMoniker": "C:\\Users\\Usuario\\Documents\\Amor\\Archive\\Interfaz\\IFilesManager.cs",
+              "RelativeDocumentMoniker": "..\\Archive\\Interfaz\\IFilesManager.cs",
+              "ToolTip": "C:\\Users\\Usuario\\Documents\\Amor\\Archive\\Interfaz\\IFilesManager.cs",
+              "RelativeToolTip": "..\\Archive\\Interfaz\\IFilesManager.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-19T20:41:52.938Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "FilesManager.cs",
+              "DocumentMoniker": "C:\\Users\\Usuario\\Documents\\Amor\\Archive\\Implementacion\\FilesManager.cs",
+              "RelativeDocumentMoniker": "..\\Archive\\Implementacion\\FilesManager.cs",
+              "ToolTip": "C:\\Users\\Usuario\\Documents\\Amor\\Archive\\Implementacion\\FilesManager.cs",
+              "RelativeToolTip": "..\\Archive\\Implementacion\\FilesManager.cs",
+              "ViewState": "AQIAAAoAAAAAAAAAAAAIwBIAAAAwAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-19T20:39:11.39Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "AdministradorController.cs",
+              "DocumentMoniker": "C:\\Users\\Usuario\\Documents\\Amor\\PorjectHorizonSENA\\Controllers\\AdministradorController.cs",
+              "RelativeDocumentMoniker": "Controllers\\AdministradorController.cs",
+              "ToolTip": "C:\\Users\\Usuario\\Documents\\Amor\\PorjectHorizonSENA\\Controllers\\AdministradorController.cs",
+              "RelativeToolTip": "Controllers\\AdministradorController.cs",
+              "ViewState": "AQIAACwAAAAAAAAAAAAgwBcAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-19T20:32:14.788Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\Usuario\\Documents\\Amor\\PorjectHorizonSENA\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\Usuario\\Documents\\Amor\\PorjectHorizonSENA\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "Controllers\\HomeController.cs",
+              "ViewState": "AQIAAE0AAAAAAAAAAAAwwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-19T20:31:53.674Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "UsuariosController.cs",
+              "DocumentMoniker": "C:\\Users\\Usuario\\Documents\\Amor\\PorjectHorizonSENA\\Controllers\\UsuariosController.cs",
+              "RelativeDocumentMoniker": "Controllers\\UsuariosController.cs",
+              "ToolTip": "C:\\Users\\Usuario\\Documents\\Amor\\PorjectHorizonSENA\\Controllers\\UsuariosController.cs",
+              "RelativeToolTip": "Controllers\\UsuariosController.cs",
+              "ViewState": "AQIAACEAAAAAAAAAAAAowAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-19T20:28:36.891Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Aprendices.cshtml",
+              "DocumentMoniker": "C:\\Users\\Usuario\\Documents\\Amor\\PorjectHorizonSENA\\Views\\Usuarios\\Aprendices.cshtml",
+              "RelativeDocumentMoniker": "Views\\Usuarios\\Aprendices.cshtml",
+              "ToolTip": "C:\\Users\\Usuario\\Documents\\Amor\\PorjectHorizonSENA\\Views\\Usuarios\\Aprendices.cshtml",
+              "RelativeToolTip": "Views\\Usuarios\\Aprendices.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-19T20:28:14.329Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Usuario\\Documents\\Amor\\PorjectHorizonSENA\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\Usuario\\Documents\\Amor\\PorjectHorizonSENA\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAIAwwA0AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-19T20:20:20.961Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "PerfilController.cs",
+              "DocumentMoniker": "C:\\Users\\Usuario\\Documents\\Amor\\PorjectHorizonSENA\\Controllers\\PerfilController.cs",
+              "RelativeDocumentMoniker": "Controllers\\PerfilController.cs",
+              "ToolTip": "C:\\Users\\Usuario\\Documents\\Amor\\PorjectHorizonSENA\\Controllers\\PerfilController.cs",
+              "RelativeToolTip": "Controllers\\PerfilController.cs",
+              "ViewState": "AQIAAIkAAAAAAAAAAADgv5UAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-19T08:51:45.812Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "VMLogin.cs",
+              "DocumentMoniker": "C:\\Users\\Usuario\\Documents\\Amor\\PorjectHorizonSENA\\Models\\VMLogin.cs",
+              "RelativeDocumentMoniker": "Models\\VMLogin.cs",
+              "ToolTip": "C:\\Users\\Usuario\\Documents\\Amor\\PorjectHorizonSENA\\Models\\VMLogin.cs",
+              "RelativeToolTip": "Models\\VMLogin.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-19T08:50:57.268Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "PorjectHorizonSENA.csproj",
+              "DocumentMoniker": "C:\\Users\\Usuario\\Documents\\Amor\\PorjectHorizonSENA\\PorjectHorizonSENA.csproj",
+              "RelativeDocumentMoniker": "PorjectHorizonSENA.csproj",
+              "ToolTip": "C:\\Users\\Usuario\\Documents\\Amor\\PorjectHorizonSENA\\PorjectHorizonSENA.csproj",
+              "RelativeToolTip": "PorjectHorizonSENA.csproj",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABwAAAAKAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-06-19T08:30:11.435Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "Persistence.csproj",
+              "DocumentMoniker": "C:\\Users\\Usuario\\Documents\\Amor\\Persistence\\Persistence.csproj",
+              "RelativeDocumentMoniker": "..\\Persistence\\Persistence.csproj",
+              "ToolTip": "C:\\Users\\Usuario\\Documents\\Amor\\Persistence\\Persistence.csproj",
+              "RelativeToolTip": "..\\Persistence\\Persistence.csproj",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-06-19T08:29:41.361Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Services.csproj",
+              "DocumentMoniker": "C:\\Users\\Usuario\\Documents\\Amor\\Services\\Services.csproj",
+              "RelativeDocumentMoniker": "..\\Services\\Services.csproj",
+              "ToolTip": "C:\\Users\\Usuario\\Documents\\Amor\\Services\\Services.csproj",
+              "RelativeToolTip": "..\\Services\\Services.csproj",
+              "ViewState": "AQIAAAIAAAAAAAAAAAAYwBYAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-06-19T08:17:56.619Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "FileController.cs",
+              "DocumentMoniker": "C:\\Users\\Usuario\\Documents\\Amor\\PorjectHorizonSENA\\Controllers\\FileController.cs",
+              "RelativeDocumentMoniker": "Controllers\\FileController.cs",
+              "ToolTip": "C:\\Users\\Usuario\\Documents\\Amor\\PorjectHorizonSENA\\Controllers\\FileController.cs",
+              "RelativeToolTip": "Controllers\\FileController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAN0AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-19T08:02:06.622Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\Usuario\\Documents\\Amor\\PorjectHorizonSENA\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\Usuario\\Documents\\Amor\\PorjectHorizonSENA\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AQIAAF4AAAAAAAAAAAAAAB0AAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-19T07:42:10.537Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "AccessController.cs",
+              "DocumentMoniker": "C:\\Users\\Usuario\\Documents\\Amor\\PorjectHorizonSENA\\Controllers\\AccessController.cs",
+              "RelativeDocumentMoniker": "Controllers\\AccessController.cs",
+              "ToolTip": "C:\\Users\\Usuario\\Documents\\Amor\\PorjectHorizonSENA\\Controllers\\AccessController.cs",
+              "RelativeToolTip": "Controllers\\AccessController.cs",
+              "ViewState": "AQIAAKQAAAAAAAAAAAAqwIMAAAAUAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-19T05:36:24.684Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

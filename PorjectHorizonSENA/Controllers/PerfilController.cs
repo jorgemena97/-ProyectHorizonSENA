@@ -12,6 +12,9 @@ using System.Text;
 using DocumentFormat.OpenXml.Packaging;
 using DocumentFormat.OpenXml.Wordprocessing;
 using Archive.Implementacion;
+using Microsoft.AspNetCore.Authentication.Cookies;
+using Microsoft.AspNetCore.Authentication;
+using PorjectHorizonSENA.Models;
 
 namespace PorjectHorizonSENA.Controllers
 {
@@ -68,6 +71,15 @@ namespace PorjectHorizonSENA.Controllers
 
                 // Actualizar el usuario en la base de datos
                 await _usuarioService.UpdateUsuario(usuario);
+
+                var identity = (ClaimsIdentity)User.Identity;
+                var fotoPerfilClaim = identity.FindFirst("FotoPerfil");
+                if (fotoPerfilClaim != null)
+                {
+                    identity.RemoveClaim(fotoPerfilClaim); // Eliminar la reclamación anterior si existe
+                }
+                identity.AddClaim(new Claim("FotoPerfil", usuario.FotoPerfil)); // Agregar la nueva reclamación de la foto de perfil
+                await HttpContext.SignInAsync(CookieAuthenticationDefaults.AuthenticationScheme, new ClaimsPrincipal(identity));
 
                 // Redirigir de vuelta a la acción "MiPerfil" después de subir la foto
                 return RedirectToAction("Perfil");

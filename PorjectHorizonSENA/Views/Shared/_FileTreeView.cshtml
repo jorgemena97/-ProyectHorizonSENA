@@ -6,7 +6,16 @@
         <span class="folder" onclick="toggleFolder(this)">
             @if (!string.IsNullOrEmpty(Model.UsuarioNombre) && !string.IsNullOrEmpty(Model.UsuarioApellido) && Model.IdUsuario > 0)
             {
-                <!-- Enlace que redirige al perfil del usuario usando su ID -->
+                @if (!string.IsNullOrEmpty(Model.FotoPerfil))
+                {
+                    <img src="@Url.Content("~/images/" + Model.FotoPerfil)" alt="Foto de Perfil" class="user-photo rounded-circle me-2" style="width: 40px; height: 40px; object-fit: cover; border: 2px solid white;" />
+                }
+                else
+                {
+                    <div class="user-photo profile-picture-placeholder rounded-circle me-2" style="width: 40px; height: 40px; background-color: #CCCCCC; display: flex; justify-content: center; align-items: center;">
+                        No Foto
+                    </div>
+                }
                 <a href="@Url.Action("Perfil", "Perfil", new { id = Model.IdUsuario })" style="color: blue;">
                     <strong>@Model.UsuarioNombre @Model.UsuarioApellido</strong>
                 </a>
@@ -20,13 +29,12 @@
             <strong>@Model.Name</strong>
         </span>
     }
-   
 
     <ul style="display: @(Model.IsRootProjects ? "block" : "none")">
         @foreach (var child in Model.Children)
         {
             <li>
-                @Html.Partial("_FileTreeView", child) <!-- Llama a la vista parcial con el modelo Child -->
+                @Html.Partial("_FileTreeView", child)
             </li>
         }
     </ul>
@@ -59,9 +67,9 @@
             })
             .then(data => {
                 document.getElementById('fileContent').innerHTML = `
-                            <h2>File Content</h2>
-                            <pre>${data}</pre>
-                        `;
+                                <h2>File Content</h2>
+                                <pre>${data}</pre>
+                            `;
             })
             .catch(error => {
                 console.error('Error:', error);

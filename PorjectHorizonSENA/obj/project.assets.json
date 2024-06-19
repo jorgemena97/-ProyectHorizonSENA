@@ -11800,11 +11800,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Usuario\\Documents\\MI proyectos\\Proyecto_SENAA\\PorjectHorizonSENA\\PorjectHorizonSENA.csproj",
+      "projectUniqueName": "C:\\Users\\Usuario\\Documents\\Amor\\PorjectHorizonSENA\\PorjectHorizonSENA.csproj",
       "projectName": "PorjectHorizonSENA",
-      "projectPath": "C:\\Users\\Usuario\\Documents\\MI proyectos\\Proyecto_SENAA\\PorjectHorizonSENA\\PorjectHorizonSENA.csproj",
+      "projectPath": "C:\\Users\\Usuario\\Documents\\Amor\\PorjectHorizonSENA\\PorjectHorizonSENA.csproj",
       "packagesPath": "C:\\Users\\Usuario\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Usuario\\Documents\\MI proyectos\\Proyecto_SENAA\\PorjectHorizonSENA\\obj\\",
+      "outputPath": "C:\\Users\\Usuario\\Documents\\Amor\\PorjectHorizonSENA\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -11826,11 +11826,11 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
-            "C:\\Users\\Usuario\\Documents\\MI proyectos\\Proyecto_SENAA\\Archive\\Archive.csproj": {
-              "projectPath": "C:\\Users\\Usuario\\Documents\\MI proyectos\\Proyecto_SENAA\\Archive\\Archive.csproj"
+            "C:\\Users\\Usuario\\Documents\\Amor\\Archive\\Archive.csproj": {
+              "projectPath": "C:\\Users\\Usuario\\Documents\\Amor\\Archive\\Archive.csproj"
             },
-            "C:\\Users\\Usuario\\Documents\\MI proyectos\\Proyecto_SENAA\\Services\\Services.csproj": {
-              "projectPath": "C:\\Users\\Usuario\\Documents\\MI proyectos\\Proyecto_SENAA\\Services\\Services.csproj"
+            "C:\\Users\\Usuario\\Documents\\Amor\\Services\\Services.csproj": {
+              "projectPath": "C:\\Users\\Usuario\\Documents\\Amor\\Services\\Services.csproj"
             }
           }
         }

@@ -36,18 +36,19 @@
         <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-custom border-bottom box-shadow mb-3">
             <div class="container-fluid">
                 <a class="navbar-brand" asp-area="" asp-controller="Perfil" asp-action="Perfil">ProjectHorizonSENA</a>
+
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
                     <ul class="navbar-nav flex-grow-1">
-                        
-                        
+
+
                         <li class="nav-item">
                             <a class="nav-link" asp-area="" asp-controller="File" asp-action="Index">Inicio</a>
                         </li>
-                        
+
                         @if (User.IsInRole("Visitante"))
                         {
                             <!-- Enlaces adicionales para Visitante -->
@@ -78,29 +79,45 @@
                     </ul>
                 </div>
             </div>
-            
+
             <div class="container">
                 <div class="mx-auto d-flex align-items-center">
                     @if (User.Identity.IsAuthenticated)
                     {
                         var apellido = User.FindFirst(ClaimTypes.Surname)?.Value;
                         var usuarioId = User.FindFirst("UsuarioId")?.Value;
+                        var fotoPerfil = User.FindFirst("FotoPerfil")?.Value;
 
-                        <a class="nav-link text-white" href="@Url.Action("Perfil", "Perfil", new { id = usuarioId })">
-                            @User.Identity.Name @apellido
+                        <a class="nav-link text-white d-flex align-items-center" href="@Url.Action("Perfil", "Perfil", new { id = usuarioId })">
+                            @if (!string.IsNullOrEmpty(fotoPerfil))
+                            {
+                                <img id="profile-picture" src="@Url.Content("~/images/" + fotoPerfil)" alt="Foto de Perfil" class="profile-picture rounded-circle me-2" style="width: 40px; height: 40px; object-fit: cover; border: 2px solid white;" />
+                            }
+                            else
+                            {
+                                <div id="profile-picture" class="profile-picture-placeholder rounded-circle me-2" style="width: 40px; height: 40px; background-color: #CCCCCC; display: flex; justify-content: center; align-items: center;">
+                                    No Foto
+                                </div>
+                            }
+                            <span>@User.Identity.Name @apellido</span>
                         </a>
                     }
                 </div>
-
-                    @using (Html.BeginForm("LogOut", "Home", FormMethod.Post))
-                    {
-                        <button class="logout-button">
-                            <i class="bi bi-box-arrow-left" style="font-size: 2rem !important;" data-bs-toggle="tooltip" data-bs-placement="top" title="Logout"></i>
-                        </button>
-                    }
-                
             </div>
-        </na>
+
+            @using (Html.BeginForm("LogOut", "Home", FormMethod.Post))
+            {
+
+                <button class="logout-button nav-link">
+                    <span class="logout-text">Salir</span>
+                    <i class="bi bi-box-arrow-left" style="font-size: 2rem !important;" data-bs-toggle="tooltip" data-bs-placement="top" title="Logout"></i>
+                </button>
+
+
+            }
+
+            </div>
+            </na>
 
     </header>
     <div class="container">
@@ -114,6 +131,39 @@
             &copy; 2024 - PorjectHorizonSENA - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
         </div>
     </footer>
+
+    <style>
+        .user-photo {
+            width: 40px; /* Tamaño pequeño de la foto */
+            height: 40px; /* Asegura que la altura sea la misma que el ancho */
+            border-radius: 50%; /* Hace la imagen redondeada */
+            object-fit: cover; /* Asegura que la imagen se recorte correctamente si no es cuadrada */
+            margin-right: 8px; /* Espacio a la derecha de la imagen */
+        }
+
+        .logout-button {
+            display: flex;
+            align-items: center;
+            background: transparent; /* Asegura que el botón sea transparente o usa un color de fondo si prefieres */
+            border: none; /* Elimina el borde del botón */
+            cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+            padding: 0; /* Elimina el padding del botón */
+        }
+
+            .logout-button .logout-text {
+                margin: 0; /* Elimina cualquier margen del span */
+                font-size: 1.21rem; /* Tamaño de texto similar a 'nav-link' */
+                color: inherit; /* Hereda el color de 'nav-link' */
+                font-family: inherit; /* Hereda la fuente de 'nav-link' */
+                font-weight: 400; /* Peso de fuente similar a 'nav-link' */
+                line-height: inherit; /* Hereda la altura de línea de 'nav-link' */
+            }
+
+            .logout-button i {
+                margin-left: 0.5rem; /* Espacio entre el texto y el icono */
+            }
+
+    </style>
 
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>

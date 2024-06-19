@@ -119,17 +119,23 @@ namespace PorjectHorizonSENA.Controllers
                     user = await _usuarioService.ValidateLogin(loginModel.Email, loginModel.Password);
                 }
 
-                if (user != null)
+                if (user != null )
                 {
                     // Agrega el rol y el UsuarioId del usuario a las reclamaciones
                     var claims = new List<Claim>()
                  {
                     new Claim(ClaimTypes.NameIdentifier, user.Correo),
                     new Claim(ClaimTypes.Name, user.Nombres),
-                    new Claim(ClaimTypes.Surname, user.PrimerApellido),
+                    new Claim(ClaimTypes.Surname, user.PrimerApellido),  
                     new Claim(ClaimTypes.Role, ((Usuario)user).Rol.NombreRol),
                     new Claim("UsuarioId", user.UsuarioId.ToString()),
+                    
                  };
+
+                    if (!string.IsNullOrEmpty(user.FotoPerfil))
+                    {
+                        claims.Add(new Claim("FotoPerfil", user.FotoPerfil));
+                    }
 
 
 

@@ -37,3 +37,16 @@ C:\Users\Usuario\Documents\MI proyectos\Proyecto_SENAA\Archive\obj\Debug\net7.0\
 C:\Users\Usuario\Documents\MI proyectos\Proyecto_SENAA\Archive\obj\Debug\net7.0\refint\Archive.dll
 C:\Users\Usuario\Documents\MI proyectos\Proyecto_SENAA\Archive\obj\Debug\net7.0\Archive.pdb
 C:\Users\Usuario\Documents\MI proyectos\Proyecto_SENAA\Archive\obj\Debug\net7.0\ref\Archive.dll
+C:\Users\Usuario\Documents\Amor\Archive\bin\Debug\net7.0\Archive.deps.json
+C:\Users\Usuario\Documents\Amor\Archive\bin\Debug\net7.0\Archive.dll
+C:\Users\Usuario\Documents\Amor\Archive\bin\Debug\net7.0\Archive.pdb
+C:\Users\Usuario\Documents\Amor\Archive\obj\Debug\net7.0\Archive.csproj.AssemblyReference.cache
+C:\Users\Usuario\Documents\Amor\Archive\obj\Debug\net7.0\Archive.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Usuario\Documents\Amor\Archive\obj\Debug\net7.0\Archive.AssemblyInfoInputs.cache
+C:\Users\Usuario\Documents\Amor\Archive\obj\Debug\net7.0\Archive.AssemblyInfo.cs
+C:\Users\Usuario\Documents\Amor\Archive\obj\Debug\net7.0\Archive.csproj.CoreCompileInputs.cache
+C:\Users\Usuario\Documents\Amor\Archive\obj\Debug\net7.0\Archive.sourcelink.json
+C:\Users\Usuario\Documents\Amor\Archive\obj\Debug\net7.0\Archive.dll
+C:\Users\Usuario\Documents\Amor\Archive\obj\Debug\net7.0\refint\Archive.dll
+C:\Users\Usuario\Documents\Amor\Archive\obj\Debug\net7.0\Archive.pdb
+C:\Users\Usuario\Documents\Amor\Archive\obj\Debug\net7.0\ref\Archive.dll

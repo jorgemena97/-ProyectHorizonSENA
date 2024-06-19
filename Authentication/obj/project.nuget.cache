@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "VTqYEIiSzxWLayyEa1kenMXnJbtm0zEZVyw1AHYFWTnqw4IgzD4OK+sdogaVmJd4GeicO/vzBmAJkvQR3ph4xw==",
+  "dgSpecHash": "VLOW0NzvIqy1QRrDAV4BIW8/zreGmVoyHkjDvo0Zx6PXIj3hWKJCxnxv/Qqb/nE6+o4p8GsKPb3zSh9Oz7TXjg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Usuario\\Documents\\MI proyectos\\Proyecto_SENAA\\Authentication\\Authentication.csproj",
+  "projectFilePath": "C:\\Users\\Usuario\\Documents\\Amor\\Authentication\\Authentication.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Usuario\\.nuget\\packages\\dinktopdf\\1.0.8\\dinktopdf.1.0.8.nupkg.sha512",
     "C:\\Users\\Usuario\\.nuget\\packages\\documentformat.openxml\\3.0.2\\documentformat.openxml.3.0.2.nupkg.sha512",

@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("PorjectHorizonSENA")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+470fdb376bc30ae2ee47aff204854bfae725829e")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5f37d15fd8c2eb7fa01ad744dc092c5c724babbc")]
 [assembly: System.Reflection.AssemblyProductAttribute("PorjectHorizonSENA")]
 [assembly: System.Reflection.AssemblyTitleAttribute("PorjectHorizonSENA")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

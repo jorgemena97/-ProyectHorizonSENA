@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "d9wAr3NobziCZaEyXnDFoTPSC44VaXxAgDhzDZXqOJn+hVyJuppMVufmON4Qd76lJszr8TJgoRyjBNAHZ9N0dQ==",
+  "dgSpecHash": "5VKSgIlcyhQHSQ+YpIeVrYdeBLrX9M9CRSCHezPTNQve7CaocYC4tCJHSBka8zO+gozniEVokqXw5XavrcrioQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Usuario\\Documents\\MI proyectos\\Proyecto_SENAA\\Archive\\Archive.csproj",
+  "projectFilePath": "C:\\Users\\Usuario\\Documents\\Amor\\Archive\\Archive.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Usuario\\.nuget\\packages\\dinktopdf\\1.0.8\\dinktopdf.1.0.8.nupkg.sha512",
     "C:\\Users\\Usuario\\.nuget\\packages\\documentformat.openxml\\3.0.2\\documentformat.openxml.3.0.2.nupkg.sha512",

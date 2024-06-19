@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Usuario\\Documents\\MI proyectos\\Proyecto_SENAA\\PorjectHorizonSENA\\PorjectHorizonSENA.csproj": {}
+    "C:\\Users\\Usuario\\Documents\\Amor\\PorjectHorizonSENA\\PorjectHorizonSENA.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Usuario\\Documents\\MI proyectos\\Proyecto_SENAA\\Archive\\Archive.csproj": {
+    "C:\\Users\\Usuario\\Documents\\Amor\\Archive\\Archive.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Usuario\\Documents\\MI proyectos\\Proyecto_SENAA\\Archive\\Archive.csproj",
+        "projectUniqueName": "C:\\Users\\Usuario\\Documents\\Amor\\Archive\\Archive.csproj",
         "projectName": "Archive",
-        "projectPath": "C:\\Users\\Usuario\\Documents\\MI proyectos\\Proyecto_SENAA\\Archive\\Archive.csproj",
+        "projectPath": "C:\\Users\\Usuario\\Documents\\Amor\\Archive\\Archive.csproj",
         "packagesPath": "C:\\Users\\Usuario\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Usuario\\Documents\\MI proyectos\\Proyecto_SENAA\\Archive\\obj\\",
+        "outputPath": "C:\\Users\\Usuario\\Documents\\Amor\\Archive\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -97,14 +97,14 @@
         }
       }
     },
-    "C:\\Users\\Usuario\\Documents\\MI proyectos\\Proyecto_SENAA\\Authentication\\Authentication.csproj": {
+    "C:\\Users\\Usuario\\Documents\\Amor\\Authentication\\Authentication.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Usuario\\Documents\\MI proyectos\\Proyecto_SENAA\\Authentication\\Authentication.csproj",
+        "projectUniqueName": "C:\\Users\\Usuario\\Documents\\Amor\\Authentication\\Authentication.csproj",
         "projectName": "Authentication",
-        "projectPath": "C:\\Users\\Usuario\\Documents\\MI proyectos\\Proyecto_SENAA\\Authentication\\Authentication.csproj",
+        "projectPath": "C:\\Users\\Usuario\\Documents\\Amor\\Authentication\\Authentication.csproj",
         "packagesPath": "C:\\Users\\Usuario\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Usuario\\Documents\\MI proyectos\\Proyecto_SENAA\\Authentication\\obj\\",
+        "outputPath": "C:\\Users\\Usuario\\Documents\\Amor\\Authentication\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -194,14 +194,14 @@
         }
       }
     },
-    "C:\\Users\\Usuario\\Documents\\MI proyectos\\Proyecto_SENAA\\Domain\\Domain.csproj": {
+    "C:\\Users\\Usuario\\Documents\\Amor\\Domain\\Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Usuario\\Documents\\MI proyectos\\Proyecto_SENAA\\Domain\\Domain.csproj",
+        "projectUniqueName": "C:\\Users\\Usuario\\Documents\\Amor\\Domain\\Domain.csproj",
         "projectName": "Domain",
-        "projectPath": "C:\\Users\\Usuario\\Documents\\MI proyectos\\Proyecto_SENAA\\Domain\\Domain.csproj",
+        "projectPath": "C:\\Users\\Usuario\\Documents\\Amor\\Domain\\Domain.csproj",
         "packagesPath": "C:\\Users\\Usuario\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Usuario\\Documents\\MI proyectos\\Proyecto_SENAA\\Domain\\obj\\",
+        "outputPath": "C:\\Users\\Usuario\\Documents\\Amor\\Domain\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -287,14 +287,14 @@
         }
       }
     },
-    "C:\\Users\\Usuario\\Documents\\MI proyectos\\Proyecto_SENAA\\Persistence\\Persistence.csproj": {
+    "C:\\Users\\Usuario\\Documents\\Amor\\Persistence\\Persistence.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Usuario\\Documents\\MI proyectos\\Proyecto_SENAA\\Persistence\\Persistence.csproj",
+        "projectUniqueName": "C:\\Users\\Usuario\\Documents\\Amor\\Persistence\\Persistence.csproj",
         "projectName": "Persistence",
-        "projectPath": "C:\\Users\\Usuario\\Documents\\MI proyectos\\Proyecto_SENAA\\Persistence\\Persistence.csproj",
+        "projectPath": "C:\\Users\\Usuario\\Documents\\Amor\\Persistence\\Persistence.csproj",
         "packagesPath": "C:\\Users\\Usuario\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Usuario\\Documents\\MI proyectos\\Proyecto_SENAA\\Persistence\\obj\\",
+        "outputPath": "C:\\Users\\Usuario\\Documents\\Amor\\Persistence\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -316,11 +316,11 @@
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "C:\\Users\\Usuario\\Documents\\MI proyectos\\Proyecto_SENAA\\Authentication\\Authentication.csproj": {
-                "projectPath": "C:\\Users\\Usuario\\Documents\\MI proyectos\\Proyecto_SENAA\\Authentication\\Authentication.csproj"
+              "C:\\Users\\Usuario\\Documents\\Amor\\Authentication\\Authentication.csproj": {
+                "projectPath": "C:\\Users\\Usuario\\Documents\\Amor\\Authentication\\Authentication.csproj"
               },
-              "C:\\Users\\Usuario\\Documents\\MI proyectos\\Proyecto_SENAA\\Domain\\Domain.csproj": {
-                "projectPath": "C:\\Users\\Usuario\\Documents\\MI proyectos\\Proyecto_SENAA\\Domain\\Domain.csproj"
+              "C:\\Users\\Usuario\\Documents\\Amor\\Domain\\Domain.csproj": {
+                "projectPath": "C:\\Users\\Usuario\\Documents\\Amor\\Domain\\Domain.csproj"
               }
             }
           }
@@ -399,14 +399,14 @@
         }
       }
     },
-    "C:\\Users\\Usuario\\Documents\\MI proyectos\\Proyecto_SENAA\\PorjectHorizonSENA\\PorjectHorizonSENA.csproj": {
+    "C:\\Users\\Usuario\\Documents\\Amor\\PorjectHorizonSENA\\PorjectHorizonSENA.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Usuario\\Documents\\MI proyectos\\Proyecto_SENAA\\PorjectHorizonSENA\\PorjectHorizonSENA.csproj",
+        "projectUniqueName": "C:\\Users\\Usuario\\Documents\\Amor\\PorjectHorizonSENA\\PorjectHorizonSENA.csproj",
         "projectName": "PorjectHorizonSENA",
-        "projectPath": "C:\\Users\\Usuario\\Documents\\MI proyectos\\Proyecto_SENAA\\PorjectHorizonSENA\\PorjectHorizonSENA.csproj",
+        "projectPath": "C:\\Users\\Usuario\\Documents\\Amor\\PorjectHorizonSENA\\PorjectHorizonSENA.csproj",
         "packagesPath": "C:\\Users\\Usuario\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Usuario\\Documents\\MI proyectos\\Proyecto_SENAA\\PorjectHorizonSENA\\obj\\",
+        "outputPath": "C:\\Users\\Usuario\\Documents\\Amor\\PorjectHorizonSENA\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -428,11 +428,11 @@
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "C:\\Users\\Usuario\\Documents\\MI proyectos\\Proyecto_SENAA\\Archive\\Archive.csproj": {
-                "projectPath": "C:\\Users\\Usuario\\Documents\\MI proyectos\\Proyecto_SENAA\\Archive\\Archive.csproj"
+              "C:\\Users\\Usuario\\Documents\\Amor\\Archive\\Archive.csproj": {
+                "projectPath": "C:\\Users\\Usuario\\Documents\\Amor\\Archive\\Archive.csproj"
               },
-              "C:\\Users\\Usuario\\Documents\\MI proyectos\\Proyecto_SENAA\\Services\\Services.csproj": {
-                "projectPath": "C:\\Users\\Usuario\\Documents\\MI proyectos\\Proyecto_SENAA\\Services\\Services.csproj"
+              "C:\\Users\\Usuario\\Documents\\Amor\\Services\\Services.csproj": {
+                "projectPath": "C:\\Users\\Usuario\\Documents\\Amor\\Services\\Services.csproj"
               }
             }
           }
@@ -514,14 +514,14 @@
         }
       }
     },
-    "C:\\Users\\Usuario\\Documents\\MI proyectos\\Proyecto_SENAA\\Services\\Services.csproj": {
+    "C:\\Users\\Usuario\\Documents\\Amor\\Services\\Services.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Usuario\\Documents\\MI proyectos\\Proyecto_SENAA\\Services\\Services.csproj",
+        "projectUniqueName": "C:\\Users\\Usuario\\Documents\\Amor\\Services\\Services.csproj",
         "projectName": "Services",
-        "projectPath": "C:\\Users\\Usuario\\Documents\\MI proyectos\\Proyecto_SENAA\\Services\\Services.csproj",
+        "projectPath": "C:\\Users\\Usuario\\Documents\\Amor\\Services\\Services.csproj",
         "packagesPath": "C:\\Users\\Usuario\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Usuario\\Documents\\MI proyectos\\Proyecto_SENAA\\Services\\obj\\",
+        "outputPath": "C:\\Users\\Usuario\\Documents\\Amor\\Services\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -543,8 +543,8 @@
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "C:\\Users\\Usuario\\Documents\\MI proyectos\\Proyecto_SENAA\\Persistence\\Persistence.csproj": {
-                "projectPath": "C:\\Users\\Usuario\\Documents\\MI proyectos\\Proyecto_SENAA\\Persistence\\Persistence.csproj"
+              "C:\\Users\\Usuario\\Documents\\Amor\\Persistence\\Persistence.csproj": {
+                "projectPath": "C:\\Users\\Usuario\\Documents\\Amor\\Persistence\\Persistence.csproj"
               }
             }
           }

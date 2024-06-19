@@ -24,16 +24,6 @@
     <Folder Include="wwwroot\Proyectos\" />
   </ItemGroup>
 
-  <ItemGroup>
-    <None Update="LibreriaPDF\libwkhtmltox.dll">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Update="LibreriaPDF\libwkhtmltox.dylib">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Update="LibreriaPDF\libwkhtmltox.so">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-  </ItemGroup>
+
 
 </Project>

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Usuario\\Documents\\MI proyectos\\Proyecto_SENAA\\Authentication\\Authentication.csproj": {}
+    "C:\\Users\\Usuario\\Documents\\Amor\\Authentication\\Authentication.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Usuario\\Documents\\MI proyectos\\Proyecto_SENAA\\Authentication\\Authentication.csproj": {
+    "C:\\Users\\Usuario\\Documents\\Amor\\Authentication\\Authentication.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Usuario\\Documents\\MI proyectos\\Proyecto_SENAA\\Authentication\\Authentication.csproj",
+        "projectUniqueName": "C:\\Users\\Usuario\\Documents\\Amor\\Authentication\\Authentication.csproj",
         "projectName": "Authentication",
-        "projectPath": "C:\\Users\\Usuario\\Documents\\MI proyectos\\Proyecto_SENAA\\Authentication\\Authentication.csproj",
+        "projectPath": "C:\\Users\\Usuario\\Documents\\Amor\\Authentication\\Authentication.csproj",
         "packagesPath": "C:\\Users\\Usuario\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Usuario\\Documents\\MI proyectos\\Proyecto_SENAA\\Authentication\\obj\\",
+        "outputPath": "C:\\Users\\Usuario\\Documents\\Amor\\Authentication\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

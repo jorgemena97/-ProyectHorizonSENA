@@ -21,67 +21,7 @@ public class AdministradorController : Controller
     {
         return View();
     }
-    public IActionResult VistaParaPDF()
-    {
-        return View();
-    }
-    public IActionResult MostrarPDFenPagina()
-    {
-        string pagina_actual = HttpContext.Request.Path;
-        string url_pagina = HttpContext.Request.GetEncodedUrl();
-        url_pagina = url_pagina.Replace(pagina_actual, "");
-        url_pagina = $"{url_pagina}/Administrador/VistaParaPDF";
 
-
-        var pdf = new HtmlToPdfDocument()
-        {
-            GlobalSettings = new GlobalSettings()
-            {
-                PaperSize = PaperKind.A4,
-                Orientation = Orientation.Portrait
-            },
-            Objects = {
-                    new ObjectSettings(){
-                        Page = url_pagina
-                    }
-                }
-
-        };
-
-        var archivoPDF = _converter.Convert(pdf);
-
-
-        return File(archivoPDF, "application/pdf");
-    }
-
-    public IActionResult DescargarPDF()
-    {
-        string pagina_actual = HttpContext.Request.Path;
-        string url_pagina = HttpContext.Request.GetEncodedUrl();
-        url_pagina = url_pagina.Replace(pagina_actual, "");
-        url_pagina = $"{url_pagina}/Administrador/VistaParaPDF";
-
-
-        var pdf = new HtmlToPdfDocument()
-        {
-            GlobalSettings = new GlobalSettings()
-            {
-                PaperSize = PaperKind.A4,
-                Orientation = Orientation.Portrait
-            },
-            Objects = {
-                    new ObjectSettings(){
-                        Page = url_pagina
-                    }
-                }
-
-        };
-
-        var archivoPDF = _converter.Convert(pdf);
-        string nombrePDF = "reporte_" + DateTime.Now.ToString("ddMMyyyyHHmmss") + ".pdf";
-
-        return File(archivoPDF, "application/pdf", nombrePDF);
-    }
 
     public async Task<IActionResult> Instructores(string documentoBusqueda)
     {

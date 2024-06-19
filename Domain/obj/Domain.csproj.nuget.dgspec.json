@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Usuario\\Documents\\MI proyectos\\Proyecto_SENAA\\Domain\\Domain.csproj": {}
+    "C:\\Users\\Usuario\\Documents\\Amor\\Domain\\Domain.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Usuario\\Documents\\MI proyectos\\Proyecto_SENAA\\Domain\\Domain.csproj": {
+    "C:\\Users\\Usuario\\Documents\\Amor\\Domain\\Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Usuario\\Documents\\MI proyectos\\Proyecto_SENAA\\Domain\\Domain.csproj",
+        "projectUniqueName": "C:\\Users\\Usuario\\Documents\\Amor\\Domain\\Domain.csproj",
         "projectName": "Domain",
-        "projectPath": "C:\\Users\\Usuario\\Documents\\MI proyectos\\Proyecto_SENAA\\Domain\\Domain.csproj",
+        "projectPath": "C:\\Users\\Usuario\\Documents\\Amor\\Domain\\Domain.csproj",
         "packagesPath": "C:\\Users\\Usuario\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Usuario\\Documents\\MI proyectos\\Proyecto_SENAA\\Domain\\obj\\",
+        "outputPath": "C:\\Users\\Usuario\\Documents\\Amor\\Domain\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

@@ -1,4 +1,6 @@
-﻿using System.IO;
+﻿using Microsoft.AspNetCore.Mvc;
+using Services.Services.Interfaces;
+using System.IO;
 using Microsoft.AspNetCore.Mvc;
 using Services.Services.Interfaces;
 using System.Threading.Tasks;
@@ -6,16 +8,19 @@ using DocumentFormat.OpenXml.Packaging;
 using System.Text;
 using DocumentFormat.OpenXml.Wordprocessing;
 using DocumentFormat.OpenXml;
+using Persistence.Services.Interfaces;
+using PorjectHorizonSENA.Models;
 
 public class FileController : Controller
 {
     private readonly IProyectoService _proyectoService;
-
-    public FileController(IProyectoService proyectoService)
+    private readonly IUsuarioService _usuarioService;
+    public FileController(IProyectoService proyectoService, IUsuarioService usuarioService)
     {
         _proyectoService = proyectoService;
+        _usuarioService = usuarioService;
     }
-
+    [HttpGet]
     public async Task<IActionResult> Index()
     {
         var rootPath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot/proyectos");
@@ -23,6 +28,7 @@ public class FileController : Controller
         rootDirectory.IsRootProjects = true; // Establecer que es la carpeta raíz "proyectos"
         return View(rootDirectory);
     }
+
 
 
     private async Task<FileModel> GetDirectoryStructure(string path, bool isRootProjects = false)
@@ -42,6 +48,7 @@ public class FileController : Controller
         {
             fileModel.Name = firstSubDirectory.Name;
         }
+
         var proyecto = await _proyectoService.GetByPathAsync(dirInfo.FullName);
         if (proyecto != null)
         {
@@ -49,6 +56,16 @@ public class FileController : Controller
             fileModel.UsuarioApellido = proyecto.PrimerApellido;
             fileModel.NombreProyecto = proyecto.NombreProyecto;
             fileModel.IdUsuario = proyecto.IdUsuario ?? 0; // Usa ?? para asignar 0 si IdUsuario es null
+
+            // Obtener información del usuario, incluyendo la foto de perfil
+            if (fileModel.IdUsuario > 0)
+            {
+                var usuario = await _usuarioService.GetUsuarioById(fileModel.IdUsuario);
+                if (usuario != null)
+                {
+                    fileModel.FotoPerfil = usuario.FotoPerfil;
+                }
+            }
         }
 
         foreach (var directory in dirInfo.GetDirectories())
@@ -71,12 +88,23 @@ public class FileController : Controller
                 fileChildModel.UsuarioApellido = proyecto.PrimerApellido;
                 fileChildModel.NombreProyecto = proyecto.NombreProyecto;
                 fileChildModel.IdUsuario = proyecto.IdUsuario ?? 0; // Usa ?? para asignar 0 si IdUsuario es null
+
+                // Obtener información del usuario, incluyendo la foto de perfil
+                if (fileChildModel.IdUsuario > 0)
+                {
+                    var usuario = await _usuarioService.GetUsuarioById(fileChildModel.IdUsuario);
+                    if (usuario != null)
+                    {
+                        fileChildModel.FotoPerfil = usuario.FotoPerfil;
+                    }
+                }
             }
             fileModel.Children.Add(fileChildModel);
         }
 
         return fileModel;
     }
+
 
     public IActionResult Download(string filePath)
     {
@@ -205,19 +233,19 @@ public class FileController : Controller
     private string GetContentType(string path)
     {
         var types = new Dictionary<string, string>
-        {
-            { ".txt", "text/plain" },
-            { ".pdf", "application/pdf" },
-            { ".doc", "application/msword" },
-            { ".docx", "application/vnd.openxmlformats-officedocument.wordprocessingml.document" },
-            { ".xls", "application/vnd.ms-excel" },
-            { ".xlsx", "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet" },
-            { ".png", "image/png" },
-            { ".jpg", "image/jpeg" },
-            { ".jpeg", "image/jpeg" },
-            { ".gif", "image/gif" },
-            { ".csv", "text/csv" }
-        };
+    {
+        { ".txt", "text/plain" },
+        { ".pdf", "application/pdf" },
+        { ".doc", "application/msword" },
+        { ".docx", "application/vnd.openxmlformats-officedocument.wordprocessingml.document" },
+        { ".xls", "application/vnd.ms-excel" },
+        { ".xlsx", "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet" },
+        { ".png", "image/png" },
+        { ".jpg", "image/jpeg" },
+        { ".jpeg", "image/jpeg" },
+        { ".gif", "image/gif" },
+        { ".csv", "text/csv" }
+    };
 
         var ext = Path.GetExtension(path).ToLowerInvariant();
         return types.ContainsKey(ext) ? types[ext] : "application/octet-stream";

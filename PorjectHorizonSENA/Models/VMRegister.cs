@@ -1,6 +1,8 @@
-﻿namespace PorjectHorizonSENA.Models
+﻿
+
+namespace PorjectHorizonSENA.Models
 {
-    public class VMRegister
+    public class VMRegister 
     {
         public string NumeroDeDocumento { get; set; }
         public string TipoDeDocumento { get; set; }
@@ -15,5 +17,7 @@
         public string Departamento { get; set; }  // Nueva propiedad para Departamento
         public string CentroDeFormacion { get; set; }
         public string FichaAprendiz { get; set; }
+
+        public VMRegister() { }
     }
 }

@@ -1,0 +1,110 @@
+﻿@model IEnumerable<Domain.Entities.Usuario>
+
+<h2>Lista de Usuarios</h2>
+
+<div>
+    <form asp-action="Aprendices" method="get">
+        <label for="documentoBusqueda">Buscar por número de documento: </label>
+        <input type="text" name="documentoBusqueda" id="documentoBusqueda" />
+        <input type="submit" value="Buscar" />
+    </form>
+</div>
+
+<table class="table" id="tblEstudiantes">
+    <thead class="bg-light">
+        <tr>
+            <th>N° CC</th>
+            <th>Tipo de Documento</th>
+            <th>Nombres</th>
+            <th>Primer Apellido</th>
+            <th>Rol</th>
+            <th>Acciones</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var usuario in Model.Where(u => u.IdRol == 0 || u.IdRol == 1))
+        {
+            <tr>
+                <td>@usuario.NumeroDeDocumento</td>
+                <td>@usuario.TipoDeDocumento</td>
+                <td>@usuario.Nombres</td>
+                <td>@usuario.PrimerApellido</td>
+                <td>
+                    <select class="form-select" name="IdRol" asp-for="@usuario.IdRol">
+                        <option value="0" selected="@((usuario.IdRol == 0) ? "selected" : null)">Visitante</option>
+                        <option value="1" selected="@((usuario.IdRol == 1) ? "selected" : null)">Aprendiz</option>
+                    </select>
+                </td>
+                <td>
+                    <button class="btn btn-primary" type="submit" name="usuarioId" value="@usuario.UsuarioId"> <i class="bi-pencil-square"></i> Actualizar Rol</button>
+
+                </td>
+
+            </tr>
+        }
+    </tbody>
+</table>
+
+<form asp-action="ActualizarRolAprendiz" method="post" id="formActualizarRol">
+    <input type="hidden" name="usuarioId" id="usuarioId" />
+    <input type="hidden" name="IdRol" id="IdRol" />
+</form>
+
+<a asp-controller="Home" asp-action="Index"> <button class=" btn btn-success">Volver </button></a>
+
+@section Scripts {
+    <script>
+        $(document).ready(function () {
+            var table = $('#tblEstudiantes').DataTable({
+                "searching": false,
+                "paginate": {
+                    "first": "Primero",
+                    "last": "Último",
+                    "next": "Siguiente",
+                    "previous": "Anterior"
+                },
+                "language": {
+                    "paginate": {
+                        "next": "Siguiente",
+                        "previous": "Anterior"
+                    },
+                    "info": "Mostrando del _START_ al _END_ de _TOTAL_ registros"
+                }
+
+
+            });
+
+            // Captura el clic en el botón de "Actualizar Rol"
+            $('#tblEstudiantes').on('click', 'button', function () {
+                var usuarioId = $(this).val(); // Obtén el valor del usuarioId
+                var rolSeleccionado = $(this).closest('tr').find('select[name="IdRol"]').val(); // Obtén el valor del rol seleccionado
+
+                // Establece los valores en el formulario oculto
+                $('#usuarioId').val(usuarioId);
+                $('#IdRol').val(rolSeleccionado);
+
+                // Envía el formulario
+                $('#formActualizarRol').submit();
+            });
+
+            // Reajusta los eventos de DataTable después de cada cambio de paginación
+            $('#tblEstudiantes').on('page.dt', function () {
+                table.rows().every(function () {
+                    var row = this.node();
+                    $(row).find('button').off('click').on('click', function () {
+                        var usuarioId = $(this).val(); // Obtén el valor del usuarioId
+                        var rolSeleccionado = $(this).closest('tr').find('select[name="IdRol"]').val(); // Obtén el valor del rol seleccionado
+
+                        // Establece los valores en el formulario oculto
+                        $('#usuarioId').val(usuarioId);
+                        $('#IdRol').val(rolSeleccionado);
+
+                        // Envía el formulario
+                        $('#formActualizarRol').submit();
+                    });
+                });
+            });
+        });
+
+    </script>
+}
